@@ -1,0 +1,794 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8" /><title>
+	Результаты матчей | Футбольная статистика и аналитика, анализ матчей и турниров
+</title><script src="/bundles/modernizr?v=Vd40cG5fYxxjdknf_y9ilK-zi7pnjL35tk9IAsOQgQc1"></script>
+<link href="/Content/css?v=4JO5yfoCmn8YOlDYn7nVmuZNCxi2kAXgJd5Wwy96UR41" rel="stylesheet"/>
+<link rel="stylesheet" href="Content/Modal.css" /><link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /><meta name="viewport" content="width=device-width" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script> 
+
+    <!-- BEGIN ADVERTSERVE CODE -->
+    <script type="text/javascript">
+    var _avp = _avp || [];
+    (function() {
+      var s = document.createElement('script');
+      s.type = 'text/javascript'; s.async = true; s.src = window.location.protocol + '//adbetnet.advertserve.com/js/libcode3.js';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    })();
+    </script>
+    <!-- END ADVERTSERVE CODE -->
+<meta name="Description" content="Результаты и расписание предстоящих футбольных матчей. Результаты матчей с возможностью фильтрации и сортировкой по популярности или времени начала матчей." /><meta name="Keywords" content="результаты футбольных матчей, расписание матчей, календарь матчей футбол" /><link href="/WebResource.axd?d=-H-7euyzCq22q5_s0z2InEq2JOajhvFaGLFnbDy2eVR3ynretd4Od6eZlEup64AJ4Q_Wllt-_ngSldhd_mXdB-NhAETYFkWQrdg4HGMpVf271GnVWfb26J2LDP5CEuRoPKMXBg2&amp;t=635988325371169593" type="text/css" rel="stylesheet" /><link href="/WebResource.axd?d=hcXDZhXiidgsQUtEo5iT3yW8iam2Ex7XD5wTPbMs3lxR8ZAY4dl1FzWfIxSdgJYTFWWfoGmQJ-neOqGXfIKl9zHYOuNf3xizq6QlOUi_LgEZTEfnM3mZlmfgs1f6WRjsZuC1flLQg2n2_g5WzDYszCYoIvQ1&amp;t=635988325371169593" type="text/css" rel="stylesheet" /></head>
+<body>
+    <div id="PageUpdateProgress" style="display:none;">
+	
+          <div class="modal">
+               <div class="center">
+                    <img alt="" src='/Images/loader.gif' />
+               </div>
+          </div>
+    
+</div>
+
+    <div id="boxes">
+      <div style="top: 250.5px; left: 325.5px; display: none;" id="dialog" class="window">Релиз NB-Bet v2.6
+        <div id="lorem">
+          <p>Анализ средних показателей <strong>команд</strong> и <strong>турниров,</strong> фильтр результатов матчей.
+          </p>
+        </div>
+        <div id="popupfoot"><a href="/News" class="agree">Подробнее</a> | <a class="close agree" style="color:red;" href="#">Закрыть</a> </div>
+      </div>
+      <div style="width: 1080px; font-size: 32pt; color:white; height: 100%; display: none; opacity: 0.8;" id="mask"></div>
+    </div>
+    
+
+    <!-- BEGIN ADVERTSERVE CODE -->
+    <div id="2g509QwpiR8xpZ2yHCMU">
+        <script type="text/javascript">
+        if (!document.cookie || document.cookie.indexOf('AVPDCAP=') == -1) { 
+            _avp.push({ tagid: '2g509QwpiR8xpZ2yHCMU', alias: '/', type: 'dynamic', zid: 4799, pid: 1253 });
+        }
+        </script>
+    </div>   
+    <!-- END ADVERTSERVE CODE -->
+    <form method="post" action="./Results" onsubmit="javascript:return WebForm_OnSubmit();" id="ctl01">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl01'];
+if (!theForm) {
+    theForm = document.ctl01;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"ru-RU","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":" ","CurrencySymbol":"₽","NaNSymbol":"NaN","CurrencyNegativePattern":8,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"-∞","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":",","NumberGroupSeparator":" ","CurrencyPositivePattern":3,"PositiveInfinitySymbol":"∞","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":" ","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402289999999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":".","FirstDayOfWeek":1,"CalendarWeekRule":0,"FullDateTimePattern":"d MMMM yyyy \u0027г.\u0027 H:mm:ss","LongDatePattern":"d MMMM yyyy \u0027г.\u0027","LongTimePattern":"H:mm:ss","MonthDayPattern":"d MMMM","PMDesignator":"","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd.MM.yyyy","ShortTimePattern":"H:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["Вс","Пн","Вт","Ср","Чт","Пт","Сб"],"ShortestDayNames":["Вс","Пн","Вт","Ср","Чт","Пт","Сб"],"DayNames":["воскресенье","понедельник","вторник","среда","четверг","пятница","суббота"],"AbbreviatedMonthNames":["янв","фев","мар","апр","май","июн","июл","авг","сен","окт","ноя","дек",""],"MonthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь",""],"IsReadOnly":true,"NativeCalendarName":"григорианский календарь","AbbreviatedMonthGenitiveNames":["янв","фев","мар","апр","мая","июн","июл","авг","сен","окт","ноя","дек",""],"MonthGenitiveNames":["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря",""]},"eras":[1,"наша эра",null,0]};//]]>
+</script>
+
+<script src="/bundles/MsAjaxJs?v=J4joXQqg80Lks57qbGfUAfRLic3bXKGafmR6wE4CFtc1" type="text/javascript"></script>
+<script src="Scripts/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="Scripts/jquery-ui-1.8.24.min.js" type="text/javascript"></script>
+<script src="/bundles/WebFormsJs?v=q9E9g87bUDaS624mcBuZsBaM8xn2E5zd-f4FCdIk2cA1" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=eE6V8nDbUVn0gtG6hKNX_MaJt-1ClUu4EBlK-KXLIDpmOOr6AhxDmHbbmNNCm_hh0z_0Ra2jfUx47yqQSDXkNyMjzw4Myy2Au81ihSE0imDki-rF0&amp;t=ac64ff3" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=jwf4VSQi7LeShc44FJ-gAXubEcP24liHFMOG-nfj4EvD6Qs2tIbKXdpvmXwNthyK3a5U_-u0AHI0ry0jmh9jH6FnjO386tlJFUHhiyhQ_oit9dhX0&amp;t=ac64ff3" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=mcAASOSteirJeuV-3by3UZ6zmZu-BTFW46Sf0df5OvM5-CNcs0ZqapjReLaMVU9rD0nRJrhv0Z0rdBv-rKx3pOf7Uco1&amp;t=ac64ff3" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=uiErWUqGhD5_ddnGX4Xq_vWF21ZVDKQFG7YCfXUaRbaAYuQ-FDoTE8vsiL0OKvi8cDsnhNLdRqfbe52wbzhVi2WEGFGtp6hy-rsc1bBkbCnUgVRb0&amp;t=ac64ff3" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=nai7mGcYyE2dix_TwveLDXg3JTFEhpbWm1Fk2uJg4T9S2SPQHUlqjnlcuqLTus8SUQTviQ6uVvh9K36m-UbvrCJkVkfgsWBcRUIkKuCmo7rqHgvr0&amp;t=ac64ff3" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=LQ1q2RBSthBAZhliMjtG_0PQVlJyPzcKwmnD0vU1xGTacceUZctRpJ9x8bvgvfsS_eT_QSduenN9jC5VKn8AAL6z-29F8lxLH14dCdT1xM5qLg470&amp;t=ac64ff3" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=HEFpVKbnoeQjkjHkFKu3MBlav23A27kDcfvN8kmnYDDoPcgu-HrHTQwoHCom0fFGB2IbdvTM7_uuOgV6hM2jc1ZARQl0x5-xwWqwdwdb36EUfZbG0&amp;t=ac64ff3" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=VOYD8Xe7kQA0lniBYXVpAoQqZPK35WBVzPdzf6fg35qw5NCjAwkHw2Hy-eVzgS9MDaIMMr9cQayp4LIkbijQCtFpXCRth6h_ALFf-bDZLJfwutFs0&amp;t=ac64ff3" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=24039AtbfhsNBYQDFUMYHEP2Gp6mn9fkdBzv-8TE4Z4GtmkxIya-1sVTJ9z9PP0HQXk-p-42bTQoaxUi8clxSUG4I0A1&amp;t=ac64ff3" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=myBlz7mQmGQE80F8-WeLsbAcV8GvEr_R0hC8OqZx6Ndr7VhyccZqNz0zRL_NID2orGiDRjY4SsLgSCma09v24tKaxxObfP4iU-rSPqvHKPrN-1qK0&amp;t=ac64ff3" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=NISXSzp87hD3qcCkP6NEPvaHfTqQgYCzABGkZjsseJwSogDNxdjQ1XaQp0LQNq1V1sesTYdT4msIl6PRxwfrcm6Cks3z8jx_W7Vgo0gFya_VnYAP0&amp;t=ac64ff3" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="63301E89" />
+</div>
+ 
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScrMan', 'ctl01', ['tctl00$MainContent$updPnlContent','MainContent_updPnlContent'], ['ctl00$MainContent$txtDate','MainContent_txtDate','ctl00$MainContent$ddlLeagueGo','MainContent_ddlLeagueGo'], [], 90, 'ctl00');
+//]]>
+</script>
+
+
+
+  
+    <header>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p class="site-title">
+                    <a href="./">
+                        <img src='/Images/logo.png' width="170" height="69" class="vertical-align-middle-with-margin-logo" alt="логотип" /></a>  
+                    <a href="./" id="A2">
+                        <img src='/Images/icons/ball.png' class="sports-icons" alt="футбол" /></a>
+                    <a href="Hockey/" id="A3">
+                        <img src='/Images/icons/puck_gray.png' class="sports-icons" alt="хоккей" /></a>
+                </p>
+            </div>
+            <div class="float-right-reg">
+                <div id="pnlReg" class="pnl-reg">
+	
+                    <span id="Welcome"></span>
+                    <a id="hlUserName" class="a-dotted" href="/Account/Manage" style="font-weight:bold;"></a>
+                    <a id="btnReg" class="btn-login" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnReg&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))" style="display:inline-block;width:100px;"><img id="imgReg" src="/Images/icons/register.png" style="height:22px;vertical-align:-7px" /><span id="lblReg">Регистрация</span></a>
+                    <a id="btnLogin" class="btn-login" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnLogin&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))" style="display:inline-block;width:60px;"><img id="imgLogin" src="/Images/icons/login.png" style="height:22px;vertical-align:-7px" /><span id="lblLogin">Вход</span></a>
+                    
+                
+</div>
+                <nav>
+                    
+                    <ul id="menu">
+                        
+                        <li><a id="hlMain" href="./">Матчи</a></li>
+                        <li><a id="hlTeams" href="Teams">Команды</a></li>
+                        <li><a id="hlTournaments" href="Tournaments">Турниры</a></li>
+                        <li><a id="hlConstructor" href="Search/Matches">Инструменты</a></li>                        
+                        <li><a id="hlFacts" href="Facts">Факты</a></li>             
+                        <li><a id="hlHelp" href="Help">Помощь</a></li>
+                        <li><a id="hlContact" href="Contact">Обратная связь</a></li>
+                        <li style="display:none" class="vk_link"><a href="https://vk.com/nbbetcom" id="A1" style="background:none;" target="_blank">
+                        <img src='/Images/icons/icon_vk.png' width="20" height="23" class="vertical-align-middle-with-margin" />
+                    </a></li>
+                    </ul>
+                    
+                </nav>
+            </div>
+
+        </div>
+    </header>
+    <div id="body">
+
+       
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>Результаты матчей - Футбол</h1>
+            </hgroup>
+                     
+            <p>
+                Результаты и расписание ближайших футбольных матчей с сортировкой по популярности или времени начала матча. Справочная информация и дополнительные сведения об анализе статистики и результатах футбольных матчей в разделе 
+                <a class="a-dotted" 
+                    href="/Help">Помощь.</a>
+            </p>
+
+        </div>
+    </section>
+
+
+       <script src="/Scripts/jquery.sticky-kit.min.js"></script>
+       <script type="text/javascript">
+
+           $(document).ready(function () {
+               if ($(window).width() > 300) {
+                   $('aside').stick_in_parent({
+                       parent: "#body",
+                       spacer: ".sticky-spacer",
+                       inner_scrolling: true,
+                       bottoming: true,
+                       offset_top: 12
+                   }).on('sticky_kit:bottom', function (e) {
+                       $(this).parent().css('position', 'static');
+                   })
+               .on('sticky_kit:unbottom', function (e) {
+                   $(this).parent().css('position', 'relative');
+               })
+
+                   $(window).scroll(function () {
+                       if ($(this).scrollTop() > 400) {
+                           $('.scrollup').fadeIn();
+                       } else {
+                           $('.scrollup').fadeOut();
+                       }
+                   });
+
+                   $('.scrollup').click(function () {
+                       $("html, body").animate({ scrollTop: 0 }, 600);
+                       return false;
+                   });
+               };
+           });
+
+       </script>
+
+        <section class="content-wrapper main-content clear-fix">
+            <a href="#" class="scrollup">Наверх</a>
+            
+
+    <article>
+        <div id="MainContent_pnlHeader" class="toggle-wrp-leagues" style="border-top:none;cursor:default;">
+	
+                <span id="MainContent_lblHeader">Результаты и расписание матчей</span>
+            
+</div><div id="MainContent_pnlContent" class="toggle-content-leagues" style="padding:15px;">
+	
+                <div id="MainContent_pnlLeagueGo" style="text-align:right;">
+		
+                    
+                    <img id="MainContent_imgLeagueGo" class="img-num-down" alt="league" src="/Images/icons/cup.png" style="height:22px;width:22px;margin:1px 0px 6px 0px;cursor:default;" />
+                    <select name="ctl00$MainContent$ddlLeagueGo" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$ddlLeagueGo\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainContent_ddlLeagueGo" style="width:230px;margin-left:1px;max-width:230px;">
+			<option value="0" selected="selected">все</option>
+			<option value="64">Австралия. А-лига</option>
+			<option value="20">Австрия. Бундеслига</option>
+			<option value="105">Австрия. Первая лига</option>
+			<option value="63">Азербайджан. Премьер-Лига</option>
+			<option value="122">Азия. Лига Чемпионов</option>
+			<option value="74">Албания. Суперлига</option>
+			<option value="97">Алжир. Первая лига</option>
+			<option value="123">Америка. Кубок Либертадорес</option>
+			<option value="137">Америка. Южноамериканский кубок</option>
+			<option value="5">Англия. Премьер-Лига</option>
+			<option value="36">Англия. Чемпионшип</option>
+			<option value="68">Англия. Первая лига</option>
+			<option value="69">Англия. Вторая лига</option>
+			<option value="70">Англия. Национальная лига</option>
+			<option value="26">Аргентина. Примера</option>
+			<option value="85">Аргентина. Примера Б</option>
+			<option value="142">Аргентина. Примера Б Метрополитана</option>
+			<option value="48">Армения. Премьер-Лига</option>
+			<option value="109">Бахрейн. Премьер-Лига</option>
+			<option value="17">Беларусь. Высшая лига</option>
+			<option value="15">Бельгия. Высшая лига</option>
+			<option value="89">Бельгия. Второй дивизион</option>
+			<option value="28">Болгария. Первая лига</option>
+			<option value="150">Болгария. Вторая лига</option>
+			<option value="125">Боливия. Примера-Дивизион</option>
+			<option value="144">Босния и Герцеговина. Премьер-Лига</option>
+			<option value="25">Бразилия. Серия А</option>
+			<option value="133">Бразилия. Серия Б</option>
+			<option value="47">Венгрия. Высшая лига</option>
+			<option value="152">Венгрия. Первая лига</option>
+			<option value="117">Венесуэла. Высший дивизион</option>
+			<option value="104">Вьетнам. V-Лига</option>
+			<option value="149">Гватемала. Лига Насьональ</option>
+			<option value="22">Германия. Бундеслига</option>
+			<option value="39">Германия. Бундеслига 2</option>
+			<option value="76">Германия. Лига 3</option>
+			<option value="164">Гибралтар. Премьер-Дивизион</option>
+			<option value="151">Гондурас. Лига Насьональ</option>
+			<option value="158">Гонконг. Премьер-Лига</option>
+			<option value="16">Греция. Суперлига</option>
+			<option value="102">Греция. Вторая лига</option>
+			<option value="115">Грузия. Высшая лига</option>
+			<option value="156">Грузия. Первая лига</option>
+			<option value="49">Дания. Суперлига</option>
+			<option value="113">Дания. Первый дивизион</option>
+			<option value="45">Европа. Лига Чемпионов</option>
+			<option value="46">Европа. Лига Европы</option>
+			<option value="110">Египет. Премьер-Лига</option>
+			<option value="58">Израиль. Премьер-Лига</option>
+			<option value="81">Израиль. Лига Леумит</option>
+			<option value="98">Индия. Ай-Лига</option>
+			<option value="143">Индонезия. Лига 1</option>
+			<option value="157">Иордания. Про-Лига</option>
+			<option value="84">Иран. Про-Лига</option>
+			<option value="51">Ирландия. Высшая лига</option>
+			<option value="108">Ирландия. Первый дивизион</option>
+			<option value="118">Исландия. Высшая лига</option>
+			<option value="131">Исландия. Дивизион 1</option>
+			<option value="2">Испания. Примера </option>
+			<option value="37">Испания. Сегунда</option>
+			<option value="4">Италия. Серия А</option>
+			<option value="38">Италия. Серия Б</option>
+			<option value="62">Казахстан. Премьер-Лига</option>
+			<option value="86">Катар. Лига звёзд</option>
+			<option value="175">Кения. Премьер-Лига</option>
+			<option value="61">Кипр. Высшая лига</option>
+			<option value="162">Киргизия. Топ-Лига</option>
+			<option value="24">Китай. Суперлига</option>
+			<option value="168">Китай. Первая лига</option>
+			<option value="57">Колумбия. Примера А</option>
+			<option value="107">Колумбия. Примера Б</option>
+			<option value="165">Косово. Суперлига</option>
+			<option value="148">Коста-Рика. Примера-Дивизион</option>
+			<option value="101">Кувейт. Премьер-Лига</option>
+			<option value="54">Латвия. Высшая лига</option>
+			<option value="163">Ливан. Премьер-Лига</option>
+			<option value="55">Литва. Высшая лига</option>
+			<option value="147">Люксембург. Национальный дивизион</option>
+			<option value="146">Македония. Первая лига</option>
+			<option value="120">Малайзия. Суперлига</option>
+			<option value="121">Малайзия. Премьер-Лига</option>
+			<option value="100">Мальта. Премьер-Лига</option>
+			<option value="103">Марокко. Ботола</option>
+			<option value="40">Мексика. Лига MX</option>
+			<option value="8">Мир. Чемпионат Мира</option>
+			<option value="6">Мир. Чемпионат Европы</option>
+			<option value="93">Мир. Кубок африканских наций</option>
+			<option value="95">Мир. Золотой кубок КОНКАКАФ</option>
+			<option value="9">Мир. Чемпионат Мира. Отбор (Европа)</option>
+			<option value="32">Мир. Чемпионат Мира. Отбор (КОНМЕБОЛ)</option>
+			<option value="33">Мир. Чемпионат Мира. Отбор (КОНКАКАФ)</option>
+			<option value="71">Мир. Чемпионат Мира. Отбор (КАФ)</option>
+			<option value="59">Мир. Чемпионат Мира. Отбор (АФК)</option>
+			<option value="92">Мир. Кубок конфедераций</option>
+			<option value="96">Мир. Кубок Центральной Америки</option>
+			<option value="94">Мир. Чемпионат Мира. Отбор (ОФК)</option>
+			<option value="67">Молдова. Высшая лига</option>
+			<option value="170">Нигерия. НПФЛ</option>
+			<option value="12">Нидерланды. Эредивизия</option>
+			<option value="72">Нидерланды. Первый дивизион</option>
+			<option value="41">Норвегия. Типпелига</option>
+			<option value="126">Норвегия. Первый дивизион</option>
+			<option value="174">Норвегия. Второй дивизион</option>
+			<option value="87">ОАЭ. Про-Лига</option>
+			<option value="161">Оман. Премьер-Лига</option>
+			<option value="127">Парагвай. Первый дивизион</option>
+			<option value="119">Перу. Примера-Дивизион</option>
+			<option value="171">Перу. Сегунда</option>
+			<option value="19">Польша. Экстракласса</option>
+			<option value="106">Польша. Первая лига</option>
+			<option value="13">Португалия. Примейра</option>
+			<option value="53">Португалия. Сегунда</option>
+			<option value="1">Россия. Премьер-Лига</option>
+			<option value="31">Россия. ФНЛ</option>
+			<option value="44">Румыния. Лига 1</option>
+			<option value="154">Сальвадор. Примера-Дивизион</option>
+			<option value="155">Сан-Марино. Чемпионат</option>
+			<option value="99">Саудовская Аравия. Про-Лига</option>
+			<option value="88">Северная Ирландия. Премьершип</option>
+			<option value="166">Северная Ирландия. Чемпионшип</option>
+			<option value="43">Сербия. Суперлига</option>
+			<option value="60">Сингапур. Высшая лига</option>
+			<option value="30">Словакия. Суперлига</option>
+			<option value="66">Словения. Первая лига</option>
+			<option value="23">США. МЛС</option>
+			<option value="178">США. ЮСЛ</option>
+			<option value="140">Таиланд. Премьер-Лига</option>
+			<option value="153">Тунис. Лига 1</option>
+			<option value="14">Турция. Суперлига</option>
+			<option value="75">Турция. Первая лига</option>
+			<option value="50">Узбекистан. ПФЛ</option>
+			<option value="11">Украина. Премьер-Лига</option>
+			<option value="83">Украина. Первая лига</option>
+			<option value="128">Уругвай. Премьер-Лига</option>
+			<option value="65">Уэльс. Премьер-Лига</option>
+			<option value="132">Фарерские острова. Премьер-Лига</option>
+			<option value="167">Филиппины. ПФЛ</option>
+			<option value="42">Финляндия. Вейккауслига</option>
+			<option value="112">Финляндия. Юккёнен</option>
+			<option value="173">Финляндия. Какконен</option>
+			<option value="10">Франция. Лига 1</option>
+			<option value="52">Франция. Лига 2</option>
+			<option value="79">Франция. Лига 3</option>
+			<option value="34">Хорватия. Первая лига</option>
+			<option value="114">Черногория. Первая лига</option>
+			<option value="21">Чехия. Высшая лига</option>
+			<option value="145">Чехия. Вторая лига</option>
+			<option value="56">Чили. Примера</option>
+			<option value="160">Чили. Примера Б</option>
+			<option value="35">Швейцария. Суперлига</option>
+			<option value="111">Швейцария. Челлендж-Лига</option>
+			<option value="29">Швеция. Высшая лига</option>
+			<option value="116">Швеция. Первая лига</option>
+			<option value="176">Швеция. Дивизион 1</option>
+			<option value="18">Шотландия. Премьер-Лига</option>
+			<option value="77">Шотландия. Чемпионшип</option>
+			<option value="90">Шотландия. Первый дивизион</option>
+			<option value="91">Шотландия. Второй дивизион</option>
+			<option value="130">Эквадор. Серия А</option>
+			<option value="124">Эстония. Мейстрилига</option>
+			<option value="134">Эстония. Первая лига</option>
+			<option value="73">ЮАР. Премьер-Лига</option>
+			<option value="129">Южная Корея. К-Лига</option>
+			<option value="169">Южная Корея. К-Лига 2</option>
+			<option value="177">Южная Корея. Национальная лига</option>
+			<option value="159">Ямайка. Премьер-Лига</option>
+			<option value="27">Япония. Высшая лига</option>
+			<option value="172">Япония. Второй дивизион</option>
+
+		</select>
+
+                    <input name="ctl00$MainContent$txtDate" type="text" value="06.08.2018" maxlength="10" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$txtDate\&#39;,\&#39;\&#39;)&#39;, 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="MainContent_txtDate" style="font-size:9pt;height:16px;width:80px;margin-top:4px;margin-right:0px;" />
+                    <img id="MainContent_imgCld" class="vertical-align-middle-with-margin" src="Images/calendar.png" style="height:24px;width:24px;margin-bottom:3px;" />    
+                    <span data-val-controltovalidate="MainContent_txtDate" data-val-errormessage=" * 06.08.2017 - 06.11.2018" data-val-display="Dynamic" id="MainContent_rvDate" data-val="true" data-val-type="Date" data-val-dateorder="dmy" data-val-cutoffyear="2029" data-val-century="2000" data-val-evaluationfunction="RangeValidatorEvaluateIsValid" data-val-maximumvalue="06.11.2018" data-val-minimumvalue="06.08.2017" style="color:Red;font-size:8pt;display:none;"> * 06.08.2017 - 06.11.2018</span>
+                    <span data-val-controltovalidate="MainContent_txtDate" data-val-errormessage=" *" data-val-display="Dynamic" id="MainContent_rfvDate" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="color:Red;font-size:8pt;display:none;"> *</span>              
+                
+	</div>
+                
+
+                <div id="MainContent_updPnlContent">
+		
+                    <div id="MainContent_pnlTop">
+			
+                    <div id="MainContent_pnlFilter" style="float:left;margin:0 0 10px 10px;">
+				
+                        <span id="MainContent_lblFilter">Фильтр:</span>
+                        <select name="ctl00$MainContent$ddlFilter" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$ddlFilter\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainContent_ddlFilter" class="ddl-filter-tournaments" style="margin-top:7px;">
+					<option value="0" selected="selected">все</option>
+					<option value="1">Победа</option>
+					<option value="2">Ничья</option>
+					<option value="3">Поражение</option>
+					<option value="4">Тотал</option>
+					<option value="5">Фора</option>
+					<option value="6">Обе забьют</option>
+					<option value="7">1X | X2</option>
+					<option value="8">12</option>
+
+				</select>
+                        
+                        
+                        
+                        
+                    
+			</div>
+                    <div id="MainContent_pnlSort" style="float:right;margin-top:7px;">
+				
+                        <table id="MainContent_rblSort" class="rbl-build">
+					<tr>
+						<td><input id="MainContent_rblSort_0" type="radio" name="ctl00$MainContent$rblSort" value="по популярности" checked="checked" /><label for="MainContent_rblSort_0">по популярности</label></td><td><input id="MainContent_rblSort_1" type="radio" name="ctl00$MainContent$rblSort" value="по времени" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$rblSort$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="MainContent_rblSort_1">по времени</label></td>
+					</tr>
+				</table>
+                    
+			</div>
+                    
+		</div>
+                    <div id="MainContent_pnlDown" style="clear:both;">
+			
+                    <div id="MainContent_pnlHint" class="hint" style="margin-left:10px;float:left;text-align:left;clear:both;">
+				
+                        <input id="MainContent_chbLive" type="checkbox" name="ctl00$MainContent$chbLive" checked="checked" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$chbLive\&#39;,\&#39;\&#39;)&#39;, 0)" class="css-checkbox lrg" /><label for="MainContent_chbLive" class="css-label lrg vlad" style="font-size: 10pt; margin-bottom:5px; color:red; font-weight:bold;">LIVE</label>
+                        <input id="MainContent_chbNew" type="checkbox" name="ctl00$MainContent$chbNew" checked="checked" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$chbNew\&#39;,\&#39;\&#39;)&#39;, 0)" class="css-checkbox lrg" /><label for="MainContent_chbNew" class="css-label lrg vlad" style="font-size: 10pt; margin-bottom:5px; margin-left:7px;">Расписание</label>
+                        <input id="MainContent_chbFinished" type="checkbox" name="ctl00$MainContent$chbFinished" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$chbFinished\&#39;,\&#39;\&#39;)&#39;, 0)" class="css-checkbox lrg" /><label for="MainContent_chbFinished" class="css-label lrg vlad" style="font-size: 10pt; margin-bottom:5px; margin-left:7px;">Завершенные</label>
+                    
+			</div>
+                    <div id="MainContent_pnlCount" style="float:right;margin:5px 0 10px 0;">
+				
+                        <span id="MainContent_lblCount">Найдено матчей: 33</span>
+                    
+			</div>
+                    
+		</div>
+                    <span id="MainContent_timer" style="visibility:hidden;display:none;"></span>
+
+                    <div id="MainContent_pnlOverflow" style="overflow:auto;clear:both;">
+			
+                        <table id="MainContent_tblContent" style="font-size:9pt;width:100%;">
+				<tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="norway" src="/Images/Flags/norway.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=41' target='_blank'>Норвегия. Типпелига</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">20:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Бранн - Старт</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"><img title="Арбитр: Трюгве Кьенсли" class="img-num-down" alt="свисток" src="/Images/icons/whistle.png" style="height:18px;width:18px;cursor:default;margin-right:2px;" /></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 1 : 0</td><td class="img-stats-padding"><a id="MainContent_hlStats_136354" href="Events?ID=136354" style="background:none;"><img id="MainContent_imgStats_810_136354" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="sweden" src="/Images/Flags/sweden.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=29' target='_blank'>Швеция. Высшая лига</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">20:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Эльфсборг - Эстерсунд</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"><img title="Арбитр: Гленн Нюберг" class="img-num-down" alt="свисток" src="/Images/icons/whistle.png" style="height:18px;width:18px;cursor:default;margin-right:2px;" /></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 1 : 2</td><td class="img-stats-padding"><a id="MainContent_hlStats_140084" href="Events?ID=140084" style="background:none;"><img id="MainContent_imgStats_630_140084" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="russia" src="/Images/Flags/russia.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=1' target='_blank'>Россия. Премьер-Лига</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">17:30</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Уфа - Анжи</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"><img title="Арбитр: Сергей Карасёв" class="img-num-down" alt="свисток" src="/Images/icons/whistle.png" style="height:18px;width:18px;cursor:default;margin-right:2px;" /><img title="Есть информация о травмах" class="img-num-down" alt="травмы" src="/Images/icons/injuries.png" style="height:18px;width:18px;cursor:default;margin-left:2px;" /></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 1 : 0</td><td class="img-stats-padding"><a id="MainContent_hlStats_159454" href="Events?ID=159454" style="background:none;"><img id="MainContent_imgStats_2_159454" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="sweden" src="/Images/Flags/sweden.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=116' target='_blank'>Швеция. Первая лига</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">20:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Варнамо - Ландскруна</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 1 : 3</td><td class="img-stats-padding"><a id="MainContent_hlStats_139784" href="Events?ID=139784" style="background:none;"><img id="MainContent_imgStats_1961_139784" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="sweden" src="/Images/Flags/sweden.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=116' target='_blank'>Швеция. Первая лига</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">20:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>ГАИС - ИК Браге</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 2 : 1</td><td class="img-stats-padding"><a id="MainContent_hlStats_139786" href="Events?ID=139786" style="background:none;"><img id="MainContent_imgStats_1958_139786" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="france" src="/Images/Flags/france.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=52' target='_blank'>Франция. Лига 2</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">21:45</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Шатору - Лорьян</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"><img title="Арбитр: Ромен Делпеш" class="img-num-down" alt="свисток" src="/Images/icons/whistle.png" style="height:18px;width:18px;cursor:default;margin-right:2px;" /></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 1 : 1</td><td class="img-stats-padding"><a id="MainContent_hlStats_158568" href="Events?ID=158568" style="background:none;"><img id="MainContent_imgStats_1489_158568" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="sweden" src="/Images/Flags/sweden.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=29' target='_blank'>Швеция. Высшая лига</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">20:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Сундсвалль - Норрчёпинг</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"><img title="Арбитр: Магнус Линдгрен" class="img-num-down" alt="свисток" src="/Images/icons/whistle.png" style="height:18px;width:18px;cursor:default;margin-right:2px;" /></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 1 : 2</td><td class="img-stats-padding"><a id="MainContent_hlStats_140083" href="Events?ID=140083" style="background:none;"><img id="MainContent_imgStats_624_140083" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="denmark" src="/Images/Flags/denmark.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=49' target='_blank'>Дания. Суперлига</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">20:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Вендсиссель - Ольборг</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"><img title="Арбитр: Санди Путрос" class="img-num-down" alt="свисток" src="/Images/icons/whistle.png" style="height:18px;width:18px;cursor:default;margin-right:2px;" /></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 2 : 1</td><td class="img-stats-padding"><a id="MainContent_hlStats_157321" href="Events?ID=157321" style="background:none;"><img id="MainContent_imgStats_1860_157321" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="norway" src="/Images/Flags/norway.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=174' target='_blank'>Норвегия. Второй дивизион</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">20:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Стабек 2 - Одд 2</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 2 : 2</td><td class="img-stats-padding"><a id="MainContent_hlStats_148178" href="Events?ID=148178" style="background:none;"><img id="MainContent_imgStats_2704_148178" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="finland" src="/Images/Flags/finland.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=173' target='_blank'>Финляндия. Какконен</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">18:30</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Хонка Академия - Эспоо</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 1 : 2</td><td class="img-stats-padding"><a id="MainContent_hlStats_147856" href="Events?ID=147856" style="background:none;"><img id="MainContent_imgStats_2674_147856" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="norway" src="/Images/Flags/norway.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=174' target='_blank'>Норвегия. Второй дивизион</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">20:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Эгерсунд - Волеренга Б</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 2 : 1</td><td class="img-stats-padding"><a id="MainContent_hlStats_148179" href="Events?ID=148179" style="background:none;"><img id="MainContent_imgStats_2699_148179" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="slovenia" src="/Images/Flags/slovenia.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=66' target='_blank'>Словения. Первая лига</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">21:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Горица - Триглав</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 1 : 1</td><td class="img-stats-padding"><a id="MainContent_hlStats_155126" href="Events?ID=155126" style="background:none;"><img id="MainContent_imgStats_967_155126" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="finland" src="/Images/Flags/finland.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=112' target='_blank'>Финляндия. Юккёнен</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">18:30</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>КТП - ХИФК</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 1 : 1</td><td class="img-stats-padding"><a id="MainContent_hlStats_157429" href="Events?ID=157429" style="background:none;"><img id="MainContent_imgStats_835_157429" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="england" src="/Images/Flags/england.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=36' target='_blank'>Англия. Чемпионшип</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">21:45</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Халл Сити - Астон Вилла</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"><img title="Арбитр: Эндрю Мэдли" class="img-num-down" alt="свисток" src="/Images/icons/whistle.png" style="height:18px;width:18px;cursor:default;margin-right:2px;" /></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 1 : 1</td><td class="img-stats-padding"><a id="MainContent_hlStats_161327" href="Events?ID=161327" style="background:none;"><img id="MainContent_imgStats_143_161327" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="poland" src="/Images/Flags/poland.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=19' target='_blank'>Польша. Экстракласса</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">19:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Краковия - Арка</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"><img title="Арбитр: Павел Рачковски" class="img-num-down" alt="свисток" src="/Images/icons/whistle.png" style="height:18px;width:18px;cursor:default;margin-right:2px;" /></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 2 : 1</td><td class="img-stats-padding"><a id="MainContent_hlStats_154288" href="Events?ID=154288" style="background:none;"><img id="MainContent_imgStats_425_154288" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="georgia" src="/Images/Flags/georgia.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=115' target='_blank'>Грузия. Высшая лига</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">16:30</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Чихура - Колхети-1913</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 4 : 1</td><td class="img-stats-padding"><a id="MainContent_hlStats_155702" href="Events?ID=155702" style="background:none;"><img id="MainContent_imgStats_992_155702" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="indonesia" src="/Images/Flags/indonesia.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=143' target='_blank'>Индонезия. Лига 1</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">14:30</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Борнео - Митра Кукар</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 3 : 1</td><td class="img-stats-padding"><a id="MainContent_hlStats_157402" href="Events?ID=157402" style="background:none;"><img id="MainContent_imgStats_2241_157402" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="slovenia" src="/Images/Flags/slovenia.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=66' target='_blank'>Словения. Первая лига</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">19:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Рудар В - Кршко</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 2 : 0</td><td class="img-stats-padding"><a id="MainContent_hlStats_155125" href="Events?ID=155125" style="background:none;"><img id="MainContent_imgStats_1028_155125" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="bolivia" src="/Images/Flags/bolivia.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=125' target='_blank'>Боливия. Примера-Дивизион</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">22:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Ройал Пари - Насьональ Потоси</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 3 : 1</td><td class="img-stats-padding"><a id="MainContent_hlStats_157314" href="Events?ID=157314" style="background:none;"><img id="MainContent_imgStats_2523_157314" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="romania" src="/Images/Flags/romania.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=44' target='_blank'>Румыния. Лига 1</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">18:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Вииторул - Волунтари</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 1 : 0</td><td class="img-stats-padding"><a id="MainContent_hlStats_154709" href="Events?ID=154709" style="background:none;"><img id="MainContent_imgStats_849_154709" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="georgia" src="/Images/Flags/georgia.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=115' target='_blank'>Грузия. Высшая лига</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">19:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Торпедо К - Дила</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 2 : 1</td><td class="img-stats-padding"><a id="MainContent_hlStats_155699" href="Events?ID=155699" style="background:none;"><img id="MainContent_imgStats_1881_155699" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="peru" src="/Images/Flags/peru.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=119' target='_blank'>Перу. Примера-Дивизион</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">23:30</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Бинасьональ - Унион Комерсио</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 2 : 0</td><td class="img-stats-padding"><a id="MainContent_hlStats_157409" href="Events?ID=157409" style="background:none;"><img id="MainContent_imgStats_2529_157409" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="bulgaria" src="/Images/Flags/bulgaria.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=28' target='_blank'>Болгария. Первая лига</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">20:30</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Славия С - Витоша</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 3 : 0</td><td class="img-stats-padding"><a id="MainContent_hlStats_160846" href="Events?ID=160846" style="background:none;"><img id="MainContent_imgStats_610_160846" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="czech_republic" src="/Images/Flags/czech_republic.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=21' target='_blank'>Чехия. Высшая лига</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">19:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Дукла П - Богемианс 1905</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 1 : 1</td><td class="img-stats-padding"><a id="MainContent_hlStats_155366" href="Events?ID=155366" style="background:none;"><img id="MainContent_imgStats_446_155366" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="romania" src="/Images/Flags/romania.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=44' target='_blank'>Румыния. Лига 1</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">21:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Газ Метан - Динамо Бухарест</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 1 : 2</td><td class="img-stats-padding"><a id="MainContent_hlStats_154710" href="Events?ID=154710" style="background:none;"><img id="MainContent_imgStats_850_154710" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="serbia" src="/Images/Flags/serbia.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=43' target='_blank'>Сербия. Суперлига</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">19:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Спартак Суботица - Пролетер</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 2 : 1</td><td class="img-stats-padding"><a id="MainContent_hlStats_157417" href="Events?ID=157417" style="background:none;"><img id="MainContent_imgStats_824_157417" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="germany" src="/Images/Flags/germany.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=39' target='_blank'>Германия. Бундеслига 2</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">21:30</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Динамо Дрезден - Дуйсбург</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"><img title="Арбитр: Даниэль Зиберт" class="img-num-down" alt="свисток" src="/Images/icons/whistle.png" style="height:18px;width:18px;cursor:default;margin-right:2px;" /></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 1 : 1</td><td class="img-stats-padding"><a id="MainContent_hlStats_164190" href="Events?ID=164190" style="background:none;"><img id="MainContent_imgStats_770_164190" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="egypt" src="/Images/Flags/egypt.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=110' target='_blank'>Египет. Премьер-Лига</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">19:45</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Исмаили - Петроджет</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 1 : 0</td><td class="img-stats-padding"><a id="MainContent_hlStats_161111" href="Events?ID=161111" style="background:none;"><img id="MainContent_imgStats_1815_161111" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="faroe_islands" src="/Images/Flags/faroe_islands.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=132' target='_blank'>Фарерские острова. Прем...</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">18:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>ТБ Твёройри - Б-36 Торсхавн</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 1 : 1</td><td class="img-stats-padding"><a id="MainContent_hlStats_157140" href="Events?ID=157140" style="background:none;"><img id="MainContent_imgStats_2070_157140" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="honduras" src="/Images/Flags/honduras.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=151' target='_blank'>Гондурас. Лига Насьональ</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="color:Red;font-weight:bold;">04:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Реал Эспанья - Реал де Минас</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 4 : 1</td><td class="img-stats-padding"><a id="MainContent_hlStats_161044" href="Events?ID=161044" style="background:none;"><img id="MainContent_imgStats_2320_161044" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="egypt" src="/Images/Flags/egypt.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=110' target='_blank'>Египет. Премьер-Лига</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">17:30</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Харас Эль-Ходуд - Эль Дахлея</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 2 : 1</td><td class="img-stats-padding"><a id="MainContent_hlStats_161303" href="Events?ID=161303" style="background:none;"><img id="MainContent_imgStats_2841_161303" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="bulgaria" src="/Images/Flags/bulgaria.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=150' target='_blank'>Болгария. Вторая лига</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">18:00</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>Монтана - Локомотив Сф</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 1 : 0</td><td class="img-stats-padding"><a id="MainContent_hlStats_158239" href="Events?ID=158239" style="background:none;"><img id="MainContent_imgStats_608_158239" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr><tr class="rows-border-top">
+					<td class="first-td-content-results-auto" style="min-width:200px;padding:3px;"><div>
+						<img class="img-num-down" alt="luxembourg" src="/Images/Flags/luxembourg.png" style="height:25px;width:34px;margin-right:0px;margin-bottom:2px;cursor:default;" /><span class="a-dotted-hover"><a class = 'a-dotted-hover' href='/Tournaments?ID=147' target='_blank'>Люксембург. Национальны...</a></span>
+					</div></td><td class="first-td-content-results-auto"><span style="font-weight:bold;">20:30</span></td><td class="first-td-content-results-auto" style="min-width:225px;padding-left:0px;"><span>РМ Бенфика - Дюделанж</span></td><td style="width:100px;padding:0px 5px;min-width:65px;"></td><td align="right" style="min-width:75px;"><strong>ПС&nbsp;</strong> 1 : 5</td><td class="img-stats-padding"><a id="MainContent_hlStats_166520" href="Events?ID=166520" style="background:none;"><img id="MainContent_imgStats_2277_166520" src="Images/icons/open_stats.png" style="margin:0px;padding:0px;border:0px;outline:none;width:16px;height:16px;vertical-align:middle;" /></a></td>
+				</tr>
+			</table>
+                    
+		</div>
+
+                    <div id="MainContent_pnlPages" class="hint" style="text-align:center;margin-top:10px;margin-bottom:0px;margin-left:0px">
+			
+                    
+		</div>
+                
+	</div>                        
+            
+</div>
+    </article>
+
+    <div class="sticky-spacer">
+        <aside>
+            <div class ="func-aside-ban">
+                <div id="JfWfbNUF"></div>
+                <script>(function(w,d,o,g,r,a,m){w[r]=w[r]||function(){
+                (w[r+'l']=w[r+'l']||[]).push(arguments)};if(!w.ABN){a=d.createElement(o),m=d.getElementsByTagName(o)[0];
+                a.async=1;a.src=g;m.parentNode.insertBefore(a,m)}})(window,document,'script','https://xml.adbetnet.com/libs/b.js','ABNS');
+                ABNS('JfWfbNUF', {id:1204154538});
+                </script>
+            </div>
+
+            <div class ="func-aside">        
+                    <div id="MainContent_pnlExpandBuildParameters_Инструменты" class="toggle-wrp-build" style="border:none;clear:both;">
+	<span id="MainContent_lblHeaderBuildParameters_Инструменты">Инструменты</span>
+</div><div id="MainContent_pnlDetailsBuildParameters_Инструменты" class="toggle-content-build" style="border-bottom:4px #69A3CF solid; border-top: none; padding: 8px 10px 12px 10px;">
+	<a id="MainContent_hlTool_0" href="./" style="padding-left:0px;padding-right:0px;"><div id="MainContent_pnlTool_0" class="popular-tournaments-hover">
+		<img id="MainContent_imgTool_0" class="img-num-down" alt="matches" src="/Images/icons/matches.png" style="height:20px;width:20px;margin:3px 6px 5px 6px;" /><span id="MainContent_lblTool_0">Анализ матчей</span>
+	</div></a><a id="MainContent_hlTool_1" href="/Search/Matches" style="padding-left:0px;padding-right:0px;"><div id="MainContent_pnlTool_1" class="popular-tournaments-hover">
+		<img id="MainContent_imgTool_1" class="img-num-down" alt="search" src="/Images/icons/search.png" style="height:20px;width:20px;margin:3px 6px 5px 6px;" /><span id="MainContent_lblTool_1">Поиск по критериям</span>
+	</div></a><a id="MainContent_hlTool_2" href="/Teams" style="padding-left:0px;padding-right:0px;"><div id="MainContent_pnlTool_2" class="popular-tournaments-hover">
+		<img id="MainContent_imgTool_2" class="img-num-down" alt="series" src="/Images/icons/series.png" style="height:20px;width:20px;margin:3px 6px 5px 6px;" /><span id="MainContent_lblTool_2">Серии команд</span>
+	</div></a><a id="MainContent_hlTool_3" href="/Averages" style="padding-left:0px;padding-right:0px;"><div id="MainContent_pnlTool_3" class="popular-tournaments-hover">
+		<img id="MainContent_imgTool_3" class="img-num-down" alt="averages" src="/Images/icons/avg.png" style="height:20px;width:20px;margin:3px 6px 5px 6px;" /><span id="MainContent_lblTool_3">Средние показатели</span>
+	</div></a><a id="MainContent_hlTool_4" href="/Search/Draws" style="padding-left:0px;padding-right:0px;"><div id="MainContent_pnlTool_4" class="popular-tournaments-hover">
+		<img id="MainContent_imgTool_4" class="img-num-down" alt="draws" src="/Images/icons/draws.png" style="height:20px;width:20px;margin:3px 6px 5px 6px;" /><span id="MainContent_lblTool_4">Поиск ничьих</span>
+	</div></a><a id="MainContent_hlTool_5" href="/Constructor" style="padding-left:0px;padding-right:0px;"><div id="MainContent_pnlTool_5" class="popular-tournaments-hover">
+		<img id="MainContent_imgTool_5" class="img-num-down" alt="constructor" src="/Images/icons/constructor.png" style="height:20px;width:20px;margin:3px 6px 5px 6px;" /><span id="MainContent_lblTool_5">Конструктор матчей</span>
+	</div></a>
+</div>
+            </div>  
+
+            
+                <div class ="func-aside-ban">
+                    <div id="afUvaYwi"></div>
+                    <script>(function(w,d,o,g,r,a,m){w[r]=w[r]||function(){
+                    (w[r+'l']=w[r+'l']||[]).push(arguments)};if(!w.ABN){a=d.createElement(o),m=d.getElementsByTagName(o)[0];
+                    a.async=1;a.src=g;m.parentNode.insertBefore(a,m)}})(window,document,'script','https://xml.adbetnet.com/libs/b.js','ABNS');
+                    ABNS('afUvaYwi', {id:1740343602});
+                    </script>
+                </div>
+            
+
+            <div class ="func-aside">
+                    <div id="MainContent_pnlExpandBuildParameters_Статистика и аналитика" class="toggle-wrp-build" style="border:none;clear:both;">
+	<span id="MainContent_lblHeaderBuildParameters_Статистика и аналитика">Статистика и аналитика</span>
+</div><div id="MainContent_pnlDetailsBuildParameters_Статистика и аналитика" class="toggle-content-build" style="border-bottom:4px #69A3CF solid; border-top: none; padding: 8px 10px 12px 10px;">
+	<div id="MainContent_pnlAdditionalStatsHeader" style="padding:3px 5px 5px 5px;">
+		<span id="MainContent_lblAdditionalStats">Аналитика футбольных матчей и <strong>статистика футбольных турниров</strong>.</span>
+	</div><a id="MainContent_hlAdditionalStats_0" href="/Referees" style="padding-left:0px;padding-right:0px;"><div id="MainContent_pnlAdditionalStats_0" class="popular-tournaments-hover">
+		<img id="MainContent_imgAdditionalStats_0" class="img-num-down" alt="referees" src="/Images/icons/referees.png" style="height:20px;width:20px;margin:3px 6px 5px 6px;" /><span id="MainContent_lblAdditionalStats_0">Статистика арбитров</span>
+	</div></a><a id="MainContent_hlAdditionalStats_1" href="/Facts" style="padding-left:0px;padding-right:0px;"><div id="MainContent_pnlAdditionalStats_1" class="popular-tournaments-hover">
+		<img id="MainContent_imgAdditionalStats_1" class="img-num-down" alt="facts" src="/Images/icons/facts.png" style="height:20px;width:20px;margin:3px 6px 5px 6px;" /><span id="MainContent_lblAdditionalStats_1">Игровые факты</span>
+	</div></a><a id="MainContent_hlAdditionalStats_2" href="/Tournaments" style="padding-left:0px;padding-right:0px;"><div id="MainContent_pnlAdditionalStats_2" class="popular-tournaments-hover">
+		<img id="MainContent_imgAdditionalStats_2" class="img-num-down" alt="cup" src="/Images/icons/cup.png" style="height:20px;width:20px;margin:3px 6px 5px 6px;" /><span id="MainContent_lblAdditionalStats_2">Статистика турниров</span>
+	</div></a><a id="MainContent_hlAdditionalStats_3" href="/News" style="padding-left:0px;padding-right:0px;"><div id="MainContent_pnlAdditionalStats_3" class="popular-tournaments-hover">
+		<img id="MainContent_imgAdditionalStats_3" class="img-num-down" alt="news" src="/Images/icons/news.png" style="height:20px;width:20px;margin:3px 6px 5px 6px;" /><span id="MainContent_lblAdditionalStats_3">Обновления</span>
+	</div></a><a id="MainContent_hlAdditionalStats_4" href="/Help" style="padding-left:0px;padding-right:0px;"><div id="MainContent_pnlAdditionalStats_4" class="popular-tournaments-hover">
+		<img id="MainContent_imgAdditionalStats_4" class="img-num-down" alt="help" src="/Images/icons/help.png" style="height:20px;width:20px;margin:3px 6px 5px 6px;" /><span id="MainContent_lblAdditionalStats_4">Помощь</span>
+	</div></a><a id="MainContent_hlAdditionalStats_5" href="/About" style="padding-left:0px;padding-right:0px;"><div id="MainContent_pnlAdditionalStats_5" class="popular-tournaments-hover">
+		<img id="MainContent_imgAdditionalStats_5" class="img-num-down" alt="about" src="/Images/icons/about.png" style="height:20px;width:20px;margin:3px 6px 5px 6px;" /><span id="MainContent_lblAdditionalStats_5">О проекте</span>
+	</div></a><a id="MainContent_hlAdditionalStats_6" href="/Contact" style="padding-left:0px;padding-right:0px;"><div id="MainContent_pnlAdditionalStats_6" class="popular-tournaments-hover">
+		<img id="MainContent_imgAdditionalStats_6" class="img-num-down" alt="contact" src="/Images/icons/contact.png" style="height:20px;width:20px;margin:3px 6px 5px 6px;" /><span id="MainContent_lblAdditionalStats_6">Обратная связь</span>
+	</div></a>
+</div>
+            </div>
+        </aside>
+    </div> 
+
+        </section>
+
+    </div>
+    <div style="text-align:center;background-color:#efeeef;padding:0 0 20px 0;overflow:hidden">
+        <div id="cHjoHjNn"></div>
+        <script>(function(w,d,o,g,r,a,m){w[r]=w[r]||function(){
+        (w[r+'l']=w[r+'l']||[]).push(arguments)};if(!w.ABN){a=d.createElement(o),m=d.getElementsByTagName(o)[0];
+        a.async=1;a.src=g;m.parentNode.insertBefore(a,m)}})(window,document,'script','https://xml.adbetnet.com/libs/b.js','ABNS');
+        ABNS('cHjoHjNn', {id:2123203026});
+        </script>
+    </div>
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>&copy; 2016-2018 - <a class="a-dotted" href='/News'>NB-Bet v2.6</a></p>
+            </div>
+            <div style="padding-right:12px; margin-top:10px;" class="float-right">
+              
+                <!--LiveInternet counter--><script type="text/javascript">
+                                               document.write("<a style='background:none;' href='//www.liveinternet.ru/click' " +
+                                               "target=_blank><img src='//counter.yadro.ru/hit?t26.11;r" +
+                                               escape(document.referrer) + ((typeof (screen) == "undefined") ? "" :
+                                               ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+                                               screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+                                               ";h" + escape(document.title.substring(0, 80)) + ";" + Math.random() +
+                                               "' alt='' title='LiveInternet: показано число посетителей за" +
+                                               " сегодня' " +
+                                               "border='0' width='88' height='15'><\/a>")
+                </script><!--/LiveInternet-->
+            </div>
+
+            <!-- Yandex.Metrika counter -->
+            <script type="text/javascript" >
+                (function (d, w, c) {
+                    (w[c] = w[c] || []).push(function() {
+                        try {
+                            w.yaCounter48279098 = new Ya.Metrika({
+                                id:48279098,
+                                clickmap:true,
+                                trackLinks:true,
+                                accurateTrackBounce:true,
+                                webvisor:true
+                            });
+                        } catch(e) { }
+                    });
+
+                    var n = d.getElementsByTagName("script")[0],
+                        s = d.createElement("script"),
+                        f = function () { n.parentNode.insertBefore(s, n); };
+                    s.type = "text/javascript";
+                    s.async = true;
+                    s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+                    if (w.opera == "[object Opera]") {
+                        d.addEventListener("DOMContentLoaded", f, false);
+                    } else { f(); }
+                })(document, window, "yandex_metrika_callbacks");
+            </script>
+            <noscript><div><img src="https://mc.yandex.ru/watch/48279098" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+            <!-- /Yandex.Metrika counter -->
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116658770-1"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-116658770-1');
+            </script>
+
+        </div>
+
+
+       
+        <div class="vk_widget">
+            <script type="text/javascript" src="https://vk.com/js/api/openapi.js?156"></script>
+
+            <!-- VK Widget -->
+            <div id="vk_community_messages"></div>
+            <script type="text/javascript">
+            VK.Widgets.CommunityMessages("vk_community_messages", 128885267, {disableExpandChatSound: "1",disableButtonTooltip: "1"});
+            </script>
+        </div>
+       
+    </footer>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() {	var id = '#dialog';var maskHeight = $(document).height()+270;var maskWidth = $(window).width();$('#mask').css({ 'width':maskWidth,'height':maskHeight});$('#mask').fadeIn(500);$('#mask').fadeTo("slow", 0.9);var winH = $(window).height();var winW = $(window).width();$(id).css('top', winH / 2 -$(id).height() / 2);$(id).css('left', winW / 2 -$(id).width() / 2);$(id).fadeIn(2000);$('.window .close').click(function(e) {e.preventDefault();$('#mask').hide();$('.window').hide();});$('#mask').click(function() {$(this).hide();$('.window').hide();});});Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":null,"displayAfter":500,"dynamicLayout":true}, null, null, $get("PageUpdateProgress"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":60000,"uniqueID":"ctl00$MainContent$timer"}, null, null, $get("MainContent_timer"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CalendarBehavior, {"button":$get("MainContent_imgCld"),"cssClass":"calendar","endDate":"2018-11-06T00:00:00","firstDayOfWeek":1,"format":"dd.MM.yyyy","id":"MainContent_ctl01","startDate":"2018-02-06T00:00:00","todaysDateFormat":"dd.MM.yyyy"}, null, null, $get("MainContent_txtDate"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

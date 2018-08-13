@@ -1,0 +1,16 @@
+An alternative method to using upgrade from the default CPAN shell is to use cpanminus and cpan-outdated.
+
+These are so easy & nimble to use that I hardly ever go back to CPAN shell. To upgrade all your modules in one go is:
+
+cpan-outdated -p | cpanm
+
+
+I recommend you install cpanminus like the docs describe:
+
+curl -L http://cpanmin.us | perl - App::cpanminus
+
+And then install cpan-outdated along with all other CPAN modules using cpanm:
+
+cpanm App::cpanoutdated
+
+BTW: If you are using perlbrew then you will need to repeat this for every Perl you have installed under it.

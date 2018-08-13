@@ -5,3 +5,10 @@ sqlite> CREATE TABLE COMPANY(
    ADDRESS        CHAR(50),
    SALARY         REAL
 );
+git init 
+git add
+git mv
+git rm
+git status
+git commit -m "sss"
+git push origin master
